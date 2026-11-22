@@ -1,4 +1,0 @@
-TODO: Choose and add an SPDX license for this package (for example MIT).
-
-Until then, `package.json` sets `"license": "UNLICENSED"` and there is no
-`LICENSE` file. Third-party LINE SDKs remain Apache-2.0 — see NOTICE.

@@ -90,15 +90,20 @@ for (const ban of ['com.rinary.kbusmart', 'kbusmart://', 'KBU Smart', 'my.kbu.cl
 for (const f of [
   'NOTICE',
   'README.md',
-  'LICENSE.TODO',
+  'LICENSE',
   'SaharatOngCapacitorLineLogin.podspec',
   'Package.swift',
   '.gitignore',
 ]) {
   if (!existsSync(join(pkgRoot, f))) fail(`missing ${f}`)
 }
-if (existsSync(join(pkgRoot, 'LICENSE'))) {
-  fail('do not ship LICENSE until an SPDX license is chosen (see LICENSE.TODO)')
+if (existsSync(join(pkgRoot, 'LICENSE.TODO'))) {
+  fail('LICENSE.TODO should be removed once LICENSE is present')
+}
+const pkgJson = JSON.parse(read(join(pkgRoot, 'package.json')))
+if (pkgJson.license !== 'MIT') fail('package.json license must be MIT')
+if (!read(join(pkgRoot, 'LICENSE')).includes('MIT License')) {
+  fail('LICENSE must be the MIT license text')
 }
 if (!read(join(pkgRoot, 'NOTICE')).includes('Apache')) {
   fail('NOTICE must credit LINE SDKs (Apache-2.0)')

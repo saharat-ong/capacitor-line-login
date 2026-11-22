@@ -196,6 +196,6 @@ npm run check    # package selfcheck
 
 ## License
 
-**TODO** — see [LICENSE.TODO](./LICENSE.TODO). Package metadata currently uses `"license": "UNLICENSED"`.
+MIT — see [LICENSE](./LICENSE).
 
 Third-party LINE SDKs are Apache-2.0 — see [NOTICE](./NOTICE).

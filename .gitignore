@@ -1,0 +1,11 @@
+node_modules/
+dist/
+android/build/
+android/.gradle/
+*.log
+.DS_Store
+package-lock.json
+*.tgz
+.idea/
+.vscode/
+*.iml

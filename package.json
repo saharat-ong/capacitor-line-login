@@ -14,11 +14,12 @@
     "ios/Sources",
     "Package.swift",
     "SaharatOngCapacitorLineLogin.podspec",
+    "LICENSE",
     "NOTICE",
     "README.md"
   ],
   "author": "saharat-ong",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
